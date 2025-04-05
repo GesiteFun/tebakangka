@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Angka</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Tebak Angka</h1>
+            <div class="game-stats">
+                <div class="stat-box">
+                    <span>Percobaan</span>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="stat-box">
+                    <span>Rekor</span>
+                    <span id="best-score">-</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-content">
+            <p class="game-description">Saya memikirkan angka antara 1 sampai 100. Bisakah kamu menebaknya?</p>
+            
+            <div class="input-group">
+                <input type="number" id="guess-input" min="1" max="100" placeholder="Masukkan tebakan">
+                <button id="guess-btn">Tebak</button>
+            </div>
+            
+            <div id="message" class="message"></div>
+            
+            <div id="history" class="history-container"></div>
+        </div>
+        
+        <div class="game-footer">
+            <button id="new-game-btn">Mulai Ulang</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
